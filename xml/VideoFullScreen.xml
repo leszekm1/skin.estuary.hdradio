@@ -73,5 +73,66 @@
 				<font>font13</font>
 			</control>
 		</control>
-	</controls>
+
+        <!-- HDRADIO_NOWPLAYING_ART_OVERLAY -->
+        <control type="group">
+            <visible>!String.IsEmpty(Window(Home).Property(HDRadio.Art))</visible>
+            <left>600r</left>
+            <top>630r</top>
+            <width>500</width>
+            <height>500</height>
+            <control type="image">
+                <left>0</left>
+                <top>0</top>
+                <width>500</width>
+                <height>500</height>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
+                <texture background="true">$INFO[Window(Home).Property(HDRadio.Art)]</texture>
+            </control>
+        </control>
+
+        <!-- HDRADIO_NOWPLAYING_TEXT_OVERLAY -->
+        <control type="group">
+            <visible>!String.IsEmpty(Window(Home).Property(HDRadio.Title)) | !String.IsEmpty(Window(Home).Property(HDRadio.Artist))</visible>
+            <left>80</left>
+            <top>280r</top>
+            <width>1180</width>
+            <height>190</height>
+
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <width>1180</width>
+                <height>60</height>
+                <font>font37_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <shadowcolor>AA000000</shadowcolor>
+                <label>$INFO[Window(Home).Property(HDRadio.Title)]</label>
+            </control>
+
+            <control type="label">
+                <left>0</left>
+                <top>66</top>
+                <width>1180</width>
+                <height>46</height>
+                <font>font27_title</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <shadowcolor>AA000000</shadowcolor>
+                <label>$INFO[Window(Home).Property(HDRadio.Artist)]</label>
+            </control>
+
+            <control type="label">
+                <left>0</left>
+                <top>118</top>
+                <width>1180</width>
+                <height>42</height>
+                <font>font13</font>
+                <textcolor>DDFFFFFF</textcolor>
+                <shadowcolor>AA000000</shadowcolor>
+                <label>$INFO[Window(Home).Property(HDRadio.Album)]</label>
+            </control>
+        </control>
+        <!-- /HDRADIO_NOWPLAYING_TEXT_OVERLAY -->
+
+</controls>
 </window>

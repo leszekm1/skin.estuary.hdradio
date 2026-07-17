@@ -77,7 +77,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font45_title</font>
-							<label>$LOCALIZE[19055]</label>
+							<label>$INFO[Player.Title,[B]Title:[/B] ,[CR]]$INFO[MusicPlayer.Artist,[B]Artist:[/B] ,[CR]]$INFO[MusicPlayer.Album,[B]Album:[/B] ,[CR]]$INFO[MusicPlayer.Genre,[B]Genre:[/B] ,[CR]]</label>
 						</control>
 					</control>
 				</control>
@@ -127,7 +127,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font45_title</font>
-								<label>$LOCALIZE[19055]</label>
+								<label>$INFO[Player.Title,[B]Title:[/B] ,[CR]]$INFO[MusicPlayer.Artist,[B]Artist:[/B] ,[CR]]$INFO[MusicPlayer.Album,[B]Album:[/B] ,[CR]]$INFO[MusicPlayer.Genre,[B]Genre:[/B] ,[CR]]</label>
 							</control>
 						</control>
 					</control>
@@ -160,7 +160,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font45_title</font>
-								<label>$LOCALIZE[19055]</label>
+								<label>$INFO[Player.Title,[B]Title:[/B] ,[CR]]$INFO[MusicPlayer.Artist,[B]Artist:[/B] ,[CR]]$INFO[MusicPlayer.Album,[B]Album:[/B] ,[CR]]$INFO[MusicPlayer.Genre,[B]Genre:[/B] ,[CR]]</label>
 							</control>
 						</control>
 					</control>
