@@ -8,6 +8,7 @@ from pathlib import Path, PurePosixPath
 
 
 REJECTED_PARTS = {".git", ".github", "__pycache__", ".pytest_cache", "tools"}
+REJECTED_NAMES = {".gitattributes", ".gitignore"}
 REJECTED_SUFFIXES = {".bak", ".orig", ".rej", ".tmp"}
 
 
@@ -28,6 +29,8 @@ def main() -> None:
                 raise SystemExit(f"unsafe archive path: {path}")
             if REJECTED_PARTS.intersection(path.parts):
                 raise SystemExit(f"unwanted archive path: {path}")
+            if path.name in REJECTED_NAMES:
+                raise SystemExit(f"unwanted archive file: {path}")
             if path.suffix in REJECTED_SUFFIXES:
                 raise SystemExit(f"unwanted archive file: {path}")
 
