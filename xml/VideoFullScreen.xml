@@ -130,6 +130,19 @@
                 <textcolor>DDFFFFFF</textcolor>
                 <shadowcolor>AA000000</shadowcolor>
                 <label>$INFO[Window(Home).Property(HDRadio.Album)]</label>
+                <visible>!String.IsEqual(Window(Home).Property(HDRadio.StationSlogan),FM Radio)</visible>
+            </control>
+
+            <control type="label">
+                <left>0</left>
+                <top>118</top>
+                <width>1180</width>
+                <height>42</height>
+                <font>font13</font>
+                <textcolor>DDFFFFFF</textcolor>
+                <shadowcolor>AA000000</shadowcolor>
+                <label>$INFO[Window(Home).Property(HDRadio.Album)] | Quality $INFO[PVR.ActStreamSignal] | SNR $INFO[PVR.ActStreamSNR]</label>
+                <visible>String.IsEqual(Window(Home).Property(HDRadio.StationSlogan),FM Radio)</visible>
             </control>
         </control>
         <!-- /HDRADIO_NOWPLAYING_TEXT_OVERLAY -->
